@@ -20,6 +20,7 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+/* Header and navbar styles*/
 header {
     display: flex;
     padding: 16px 16px 0px 16px;
@@ -49,12 +50,13 @@ display: block;
 color:white;
 padding: 20px;
 text-decoration: none;
-
-
-
 }
 
+.navbar a:hover {
+    color: #8ACFE5;
+}
 
+/* First page styles */
 #homeImg {
  
  width: 100%;
