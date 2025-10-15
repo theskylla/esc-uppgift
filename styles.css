@@ -1,3 +1,54 @@
+/* 
+Graphic profile:
+ Red: #E3170A
+ Grey: #B6BDB5
+ Dark Blue: #011827
+ Blue: 36769D
+ Light Blue: #8ACFE5
+
+ Roboto (regular/bold/italic)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); 
 body {
-    background-color: blue;
+    background-color: white;
 }
+
+img {
+width: 50px;
+height: 50px;
+}
+
+/* All them button styles */
+.btn {
+width: 308px;
+height: 66px;
+border-radius: 4px;
+border-style: none;
+font-family: "Roboto", sans-serif;
+font-weight: 500;
+font-size: 24px;
+}
+
+.btn__red {
+ color: white;
+ background-color: #E3170A;
+}
+
+.btn__blue {
+ color: black;
+ background-color: #8ACFE5;
+}
+
+.btn__blueLined {
+ background-color: white;
+ color: #8ACFE5;
+ border: 1px solid #8ACFE5;
+}
+
+.btn__small {
+    width: 180px;
+    height: 44px;
+    font-size: 16px;
+   
+}
+ 
