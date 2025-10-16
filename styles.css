@@ -36,7 +36,7 @@ padding: 44px 0px 0px 20px;
 font-weight: 500;
 }
 
-.navbar {
+#navbar {
 display: flex;
 padding-top: 24px;
 font-weight: 500;
@@ -45,21 +45,25 @@ list-style-type: none;
 justify-content: center;
 }
 
-.navbar a {
+#navbar a {
 display: block;
 color:white;
 padding: 20px;
 text-decoration: none;
 }
 
-.navbar a:hover {
+#navbar a:hover {
     color: #8ACFE5;
 }
 
+
 /* First page styles */
 #homeImg {
- 
  width: 100%;
+}
+
+.btn-container {
+    /* need to center and overlap homeImg*/
 }
 
 /* All them button styles */
@@ -84,14 +88,56 @@ font-size: 24px;
 }
 
 .btn__blueLined {
- background-color: white;
+ background-color: #011827;
  color: #8ACFE5;
- border: 1px solid #8ACFE5;
+ border: 2px solid #8ACFE5;
 }
 
-.btn__small {
+.btn__smallRed {
+    color: white;
+    background-color: #E3170A;
     width: 180px;
     height: 44px;
     font-size: 16px;
-   
+}
+
+#reviews {
+ height: 400px;
+ background-color: white;
+}
+
+#reviews {
+    display: flex;
+    grid-template-columns: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.review{
+    padding:10px
+}
+.review img {
+ border-radius: 50%;
+ height: 96px;
+ width: 96px;
+}
+
+h2 {
+    text-align:  center;
+    font-size: 36px;
+    font-weight: 400;
+    padding: 100px 0px;
+}
+
+#quote {
+    height: 500px;
+    width: 100%;
+    background-color: #011827;
+    
+}
+
+footer {
+    height: 467px;
+    width: 100%;
+    background-color: #011827;
 }

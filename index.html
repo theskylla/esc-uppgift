@@ -15,7 +15,7 @@
 <h1>Hacker Escape Rooms</h1>
 </header>
 
-<ul class = navbar>
+<ul id = navbar>
         <li><a href="#">Play online</a></li>
         <li><a href="#">Play onsite</a></li>
         <li><a href="#">The story</a></li>
@@ -25,23 +25,60 @@
 
 <div id="home"></div>
  <img id=homeImg src="/images/hacker.png" alt="Hacker doing hacking">
- <button class="btn btn__red"> Press button </button>
- <button class="btn btn__blue"> Press button </button>
-<div id="reviews"></div>
+ <div class="btn-container">
+  <button class="btn btn__red"> Online challenges </button>
+  <button class="btn btn__blue"> On-site challenges </button>
+ </div>
 
-<div id="challenges">
- <div class="challenges__card"></div>
- <div class="challenges__card"></div>
- <div class="challenges__card"></div>
+<div id="reviews">
+    <div class="review">
+     <img src="/images/profilePic.png" alt="Profile picture of reviewer">
+     <q>This is a quote about how amazing <br>
+        this place is and how much fun me <br>
+        and my friends had when we tried it</q>
+        <p>John Doe, visited us in September <br> 
+            2021</p>
+    </div>
+    <div class="review">
+     <img src="/images/profilePic.png" alt="Profile picture of reviewer">
+       <q>This is a quote about how amazing <br>
+        this place is and how much fun me <br>
+        and my friends had when we tried it</q>
+        <p>John Doe, visited us in September <br> 
+            2021</p>
+    </div>
 </div>
 
-<div id="quote"></div>
+<div id="challenges">
+    <h2>Popular challenges right now</h2>
+ <div class="card">
+ <h3>Title of room (on-site)</h3>
+ <p></p>
+ <button class ="btn btn__smallRed">Book this room</button>
 
+ </div>
+ <div class="card">
+
+ </div>
+ <div class="card">
+
+ </div>
+  <div class="btn-container">
+  <button class="btn btn__red"> Online challenges </button>
+  <button class="btn btn__blue"> On-site challenges </button>
+ </div>
+</div>
+
+<div id="quote">
+ <q></q>
+ <button class="btn btn__blueLined">Read the full story</button>
+ </div>
 <div id="block">
-    <div class="block__split">
+    <div class="split">
     <img src="/images/2peoplePC.jpg" alt="Two people looking at a computer screen">
+    
     </div>
-    <div class="block__split">
+    <div class="plit">
      <img src="/images/1personPC.jpg" alt="One person looning at a computer screen">
     </div>
 </div>
