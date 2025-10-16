@@ -56,14 +56,29 @@ text-decoration: none;
     color: #8ACFE5;
 }
 
+#home {
+ position: relative;
+ text-align: center;
+}
 
 /* First page styles */
 #homeImg {
  width: 100%;
+ display: block;
+ margin: 0 auto;
+ 
 }
 
 .btn-container {
-    /* need to center and overlap homeImg*/
+ display: flex;
+ position: absolute;
+ left: 50%;
+ transform: translate(-50%);
+ bottom: -5%;
+ justify-content: center;
+ gap: 20px;
+ 
+    /* need to overlap homeImg*/
 }
 
 /* All them button styles */
@@ -104,18 +119,20 @@ font-size: 24px;
 #reviews {
  height: 400px;
  background-color: white;
+ display: flex;
+ grid-template-columns: 2;
+ justify-content: center;
+ align-items: center;
+ gap:20px;
 }
 
-#reviews {
-    display: flex;
-    grid-template-columns: 2;
-    justify-content: center;
-    align-items: center;
-}
-
+/* need to align images and text */
 .review{
-    padding:10px
+    display: grid;
+    grid-template-columns: 2;
+    padding: 20px;
 }
+
 .review img {
  border-radius: 50%;
  height: 96px;
