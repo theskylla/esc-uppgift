@@ -1,13 +1,3 @@
-/* 
-Graphic profile:
- Red: #E3170A
- Grey: #B6BDB5
- Dark Blue: #011827
- Blue: 36769D
- Light Blue: #8ACFE5
-
- Roboto (regular/bold/italic)
-*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;

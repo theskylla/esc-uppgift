@@ -1,23 +1,23 @@
-/* 
-Graphic profile:
- Red: #E3170A
- Grey: #B6BDB5
- Dark Blue: #011827
- Blue: 36769D
- Light Blue: #8ACFE5
-
- Roboto (regular/bold/italic)
-*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); 
+
+$red: #E3170A; 
+$grey: #B6BDB5;
+$dark-blue: #011827;
+$blue: #36769D;
+$light-blue:  #8ACFE5; 
+
+$mainFont: "Roboto", sans-serif;
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
     background-color: white;
-    font-family: "Roboto", sans-serif;
+    font-family: $mainFont;
     font-weight: 400;
 }
 
@@ -28,7 +28,7 @@ header {
     color: white;
     width: 100%;
     height: 100px;
-    background-color: #011827;
+    background-color: $dark-blue;
 }
 
 header h1 {   
@@ -41,7 +41,7 @@ font-weight: 500;
 display: flex;
 padding-top: 24px;
 font-weight: 500;
-background-color: #011827;
+background-color: $dark-blue;
 list-style-type: none;
 justify-content: center;
 }
@@ -54,7 +54,7 @@ text-decoration: none;
 }
 
 #navbar a:hover {
-    color: #8ACFE5;
+    color: $light-blue;
 }
 
 #home {
@@ -94,23 +94,23 @@ font-size: 24px;
 
 .btn__red {
  color: white;
- background-color: #E3170A;
+ background-color: $red;
 }
 
 .btn__blue {
  color: black;
- background-color: #8ACFE5;
+ background-color: $light-blue;
 }
 
 .btn__blueLined {
- background-color: #011827;
- color: #8ACFE5;
- border: 2px solid #8ACFE5;
+ background-color: $dark-blue;
+ color: $light-blue;
+ border: 2px solid $light-blue;
 }
 
 .btn__smallRed {
     color: white;
-    background-color: #E3170A;
+    background-color: $red;
     width: 180px;
     height: 44px;
     font-size: 16px;
@@ -158,7 +158,7 @@ font-size: 24px;
 
  .card {
    
-    background-color: #8ACFE5;
+    background-color: $light-blue;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -191,7 +191,7 @@ font-size: 24px;
     flex-direction: column;
     height: 500px;
     width: 100%;
-    background-color: #011827;
+    background-color: $dark-blue;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -211,5 +211,5 @@ footer {
     grid-template-columns: 2 1fr;
     height: 467px;
     width: 100%;
-    background-color: #011827;
+    background-color: $dark-blue;
 }
