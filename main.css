@@ -1,0 +1,207 @@
+/* 
+Graphic profile:
+ Red: #E3170A
+ Grey: #B6BDB5
+ Dark Blue: #011827
+ Blue: 36769D
+ Light Blue: #8ACFE5
+
+ Roboto (regular/bold/italic)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+/* Header and navbar styles*/
+header {
+  display: flex;
+  padding: 16px 16px 0px 16px;
+  color: white;
+  width: 100%;
+  height: 100px;
+  background-color: #011827;
+}
+
+header h1 {
+  display: inline;
+  padding: 44px 0px 0px 20px;
+  font-weight: 500;
+}
+
+#navbar {
+  display: flex;
+  padding-top: 24px;
+  font-weight: 500;
+  background-color: #011827;
+  list-style-type: none;
+  justify-content: center;
+}
+
+#navbar a {
+  display: block;
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  color: #8ACFE5;
+}
+
+#home {
+  position: relative;
+  text-align: center;
+}
+
+/* First page styles */
+#homeImg {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn-container {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -5%;
+  justify-content: center;
+  gap: 20px;
+  /* need to overlap homeImg*/
+}
+
+/* All them button styles */
+.btn {
+  width: 308px;
+  height: 66px;
+  border-radius: 4px;
+  border-style: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.btn__red {
+  color: white;
+  background-color: #E3170A;
+}
+
+.btn__blue {
+  color: black;
+  background-color: #8ACFE5;
+}
+
+.btn__blueLined {
+  background-color: #011827;
+  color: #8ACFE5;
+  border: 2px solid #8ACFE5;
+}
+
+.btn__smallRed {
+  color: white;
+  background-color: #E3170A;
+  width: 180px;
+  height: 44px;
+  font-size: 16px;
+}
+
+#reviews {
+  height: 400px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* need to align images and text */
+.review {
+  display: grid;
+  grid-template-columns: 2;
+  padding: 20px;
+}
+
+.review img {
+  border-radius: 50%;
+  height: 96px;
+  width: 96px;
+}
+
+.review q {
+  font-size: 24px;
+  font-style: italic;
+}
+
+.review p {
+  padding-top: 18px;
+  font-size: 18px;
+}
+
+#challenges {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  background-color: #8ACFE5;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  border-radius: 5px 5px 0px 0px;
+  height: 50%;
+  width: 100%;
+}
+
+.cardTxt {
+  padding: 10px;
+}
+
+.card h2 {
+  text-align: center;
+  font-size: 36px;
+  padding: 100px 0px;
+}
+
+.card p {
+  color: black;
+}
+
+#quote {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+  background-color: #011827;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#quote q {
+  color: white;
+  font-size: 28px;
+}
+
+#quote .btn {
+  margin: 40px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 2 1fr;
+  height: 467px;
+  width: 100%;
+  background-color: #011827;
+}/*# sourceMappingURL=main.css.map */

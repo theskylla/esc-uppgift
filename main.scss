@@ -65,7 +65,6 @@ text-decoration: none;
 /* First page styles */
 #homeImg {
  width: 100%;
- display: block;
  margin: 0 auto;
  
 }
@@ -127,7 +126,7 @@ font-size: 24px;
 }
 
 /* need to align images and text */
-.review{
+.review { 
     display: grid;
     grid-template-columns: 2;
     padding: 20px;
@@ -149,16 +148,47 @@ font-size: 24px;
     font-size: 18px;
 }
 
-h2 {
-    text-align:  center;
-    font-size: 36px;
 
+ #challenges {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+
+ 
+ }
+
+ .card {
+   
+    background-color: #8ACFE5;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+
+ }
+ 
+.card img {
+    border-radius: 5px 5px 0px 0px;
+    height: 50%;
+    width: 100%;
+   
+}
+
+.cardTxt {
+     padding: 10px;
+}
+.card h2 {
+    text-align: center;
+    font-size: 36px;
     padding: 100px 0px;
+}
+
+.card p {
+    color: black;
 }
 
 
 #quote {
     display: flex;
+    flex-direction: column;
     height: 500px;
     width: 100%;
     background-color: #011827;
@@ -177,6 +207,8 @@ h2 {
 }
 
 footer {
+    display: grid;
+    grid-template-columns: 2 1fr;
     height: 467px;
     width: 100%;
     background-color: #011827;
