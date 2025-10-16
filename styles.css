@@ -18,6 +18,7 @@ Graphic profile:
 body {
     background-color: white;
     font-family: "Roboto", sans-serif;
+    font-weight: 400;
 }
 
 /* Header and navbar styles*/
@@ -120,7 +121,6 @@ font-size: 24px;
  height: 400px;
  background-color: white;
  display: flex;
- grid-template-columns: 2;
  justify-content: center;
  align-items: center;
  gap:20px;
@@ -139,18 +139,41 @@ font-size: 24px;
  width: 96px;
 }
 
+.review q {
+    font-size: 24px;
+    font-style: italic;
+}
+
+.review p {
+    padding-top: 18px;
+    font-size: 18px;
+}
+
 h2 {
     text-align:  center;
     font-size: 36px;
-    font-weight: 400;
+
     padding: 100px 0px;
 }
 
+
 #quote {
+    display: flex;
     height: 500px;
     width: 100%;
     background-color: #011827;
-    
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#quote q {
+    color: white;
+    font-size: 28px;    
+}
+
+#quote .btn {
+    margin: 40px;
 }
 
 footer {
