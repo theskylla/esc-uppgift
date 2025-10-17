@@ -60,13 +60,18 @@ header h1 {
 
 .btn-container {
   display: flex;
-  position: absolute;
+  padding: 80px 0;
   left: 50%;
-  transform: translate(-50%);
   bottom: -5%;
   justify-content: center;
   gap: 20px;
   /* need to overlap homeImg*/
+}
+
+.__halfCover {
+  padding: 0;
+  position: absolute;
+  transform: translate(-50%);
 }
 
 /* All them button styles */
@@ -138,7 +143,7 @@ header h1 {
 
 h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin: 20px 20px;
   font-weight: 400;
   font-size: 28px;
 }
@@ -177,7 +182,7 @@ small {
   flex-direction: column;
 }
 
-h3 {
+.card h3 {
   font-size: 36px;
   font-weight: 400;
 }
@@ -215,6 +220,45 @@ h3 {
 
 #quote .btn {
   margin: 40px;
+}
+
+#block {
+  height: 920px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 200px;
+}
+
+.split {
+  display: flex;
+  flex-direction: row;
+  height: 460px;
+  width: 100%;
+}
+
+.splitImg {
+  display: flex;
+  width: 50%;
+}
+
+.splitTxt {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  width: 50%;
+  background-color: white;
+  padding: 100px;
+}
+
+.splitTxt h3 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.splitTxt p {
+  padding: 24px 0 24px 0;
+  font-size: 24px;
+  font-weight: 400;
 }
 
 footer {
