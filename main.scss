@@ -22,6 +22,8 @@ $light-blue:  #8ACFE5;
     font-weight: 700;
 }
 
+
+
 * {
   margin: 0;
   padding: 0;
@@ -144,9 +146,6 @@ font-size: 24px;
 
 }
 
-
-
-/* need to align images and text */
 .review { 
     display: flex;
     flex-direction: row;
@@ -206,6 +205,29 @@ font-size: 24px;
     font-size: 14px;
 }
 
+.card h3 {
+    font-size: 36px;
+    @include roboto;
+ } 
+
+ .cardTxt img {
+    height: 14px;
+    width: 14px;
+ }
+
+ .starsTxt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 4px 0 28px 0;
+ }
+
+ .stars {
+    display: flex;
+    gap: 4px;
+ }
+
  .cardTxt {
     padding: 20px;
     display: flex;
@@ -213,15 +235,7 @@ font-size: 24px;
     flex-direction: column;
  }
 
- .card h3 {
-    font-size: 36px;
-    font-weight: 400;
- }
-
- .cardTxt img {
-    height: 14px;
-    width: 14px;
- }
+ 
 
  .card p {
     font-size: 18px;
@@ -299,7 +313,8 @@ width: 100%;
 
 footer {
     display: flex;
-    padding: 120px;
+    margin: 0 120px 0 120px;
+    padding: 120px 0 120px 0;
     gap: 80px;
     height: 467px;
     width: 100%;
@@ -314,7 +329,7 @@ footer {
 }
 
 footer h3 {
- padding-bottom: 8px
+ padding-bottom: 8px;
 
  @include roboto-bolder;
 }

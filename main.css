@@ -118,7 +118,6 @@ header h1 {
   align-items: center;
 }
 
-/* need to align images and text */
 .review {
   display: flex;
   flex-direction: row;
@@ -146,8 +145,6 @@ h2 {
   text-align: center;
   margin: 20px 20px;
   font-size: 28px;
-  font-family: "roboto", sans-serif;
-  font-weight: 400;
 }
 
 #challenges {
@@ -177,21 +174,35 @@ small {
   font-size: 14px;
 }
 
-.cardTxt {
-  padding: 20px;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-
 .card h3 {
   font-size: 36px;
+  font-family: "roboto", sans-serif;
   font-weight: 400;
 }
 
 .cardTxt img {
   height: 14px;
   width: 14px;
+}
+
+.starsTxt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 4px 0 28px 0;
+}
+
+.stars {
+  display: flex;
+  gap: 4px;
+}
+
+.cardTxt {
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .card p {
@@ -265,7 +276,8 @@ small {
 
 footer {
   display: flex;
-  padding: 120px;
+  margin: 0 120px 0 120px;
+  padding: 120px 0 120px 0;
   gap: 80px;
   height: 467px;
   width: 100%;
@@ -279,6 +291,7 @@ footer {
 }
 
 footer h3 {
-  font-weight: 700;
   padding-bottom: 8px;
+  font-family: "roboto", sans-serif;
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */
