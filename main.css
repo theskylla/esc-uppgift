@@ -7,7 +7,7 @@
 
 body {
   background-color: white;
-  font-family: "Roboto", sans-serif;
+  font-family: "roboto", sans-serif;
   font-weight: 400;
 }
 
@@ -24,6 +24,7 @@ header {
 header h1 {
   display: inline;
   padding: 44px 0px 0px 20px;
+  font-family: "roboto", sans-serif;
   font-weight: 500;
 }
 
@@ -80,9 +81,9 @@ header h1 {
   height: 66px;
   border-radius: 4px;
   border-style: none;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
   font-size: 24px;
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
 }
 
 .btn__red {
@@ -144,8 +145,9 @@ header h1 {
 h2 {
   text-align: center;
   margin: 20px 20px;
-  font-weight: 400;
   font-size: 28px;
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
 }
 
 #challenges {
@@ -252,13 +254,13 @@ small {
 
 .splitTxt h3 {
   font-size: 32px;
+  font-family: "roboto", sans-serif;
   font-weight: 700;
 }
 
 .splitTxt p {
   padding: 24px 0 24px 0;
   font-size: 24px;
-  font-weight: 400;
 }
 
 footer {

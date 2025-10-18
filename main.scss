@@ -1,13 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); 
 
+
 $red: #E3170A; 
 $grey: #B6BDB5;
 $dark-blue: #011827;
 $blue: #36769D;
 $light-blue:  #8ACFE5; 
 
-$mainFont: "Roboto", sans-serif;
+@mixin roboto {
+    font-family: "roboto", sans-serif;
+    font-weight: 400;
+}
 
+@mixin roboto-bold {
+    font-family: "roboto", sans-serif;
+    font-weight: 500;
+}
+
+@mixin roboto-bolder {
+    font-family: "roboto", sans-serif;
+    font-weight: 700;
+}
 
 * {
   margin: 0;
@@ -17,8 +30,7 @@ $mainFont: "Roboto", sans-serif;
 
 body {
     background-color: white;
-    font-family: $mainFont;
-    font-weight: 400;
+    @include roboto;
 }
 
 /* Header and navbar styles*/
@@ -34,7 +46,7 @@ header {
 header h1 {   
 display: inline;
 padding: 44px 0px 0px 20px;
-font-weight: 500;
+@include roboto-bold;
 }
 
 #navbar {
@@ -94,9 +106,9 @@ width: 308px;
 height: 66px;
 border-radius: 4px;
 border-style: none;
-font-family: "Roboto", sans-serif;
-font-weight: 500;
 font-size: 24px;
+
+@include roboto-bold;
 }
 
 .btn__red {
@@ -162,7 +174,6 @@ font-size: 24px;
  h2 {
     text-align: center;
     margin: 20px 20px;
-    font-weight: 400;
     font-size: 28px;
  }
 
@@ -277,13 +288,13 @@ width: 100%;
 
 .splitTxt h3 {
     font-size: 32px;
-    font-weight: 700;
+     
+    @include roboto-bolder;
 }
 
 .splitTxt p {
     padding: 24px 0 24px 0;
     font-size: 24px;
-    font-weight: 400;
 }
 
 footer {
@@ -302,10 +313,9 @@ footer {
     width: 50%;
 }
 
-
-
 footer h3 {
- font-weight: 700;
  padding-bottom: 8px
+
+ @include roboto-bolder;
 }
 
