@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); 
 
+//mixin for font
 @mixin roboto {
     font-family: "roboto", sans-serif;
     font-weight: 400;
@@ -15,22 +16,24 @@
     font-weight: 700;
 }
 
+//breakpoint diy shorthand and variables
 @mixin breakpoint($max-width) {
   @media screen and (max-width: $max-width) {
     @content;
   }
 }
 
-$desktop-breakpoint: 1280px; //same as in figma
-$tablet-breakpoint: 800px;
-$mobile-breakpoint: 480px; //same as in figma
 
+$desktop-breakpoint: 1280px; //same as in figma
+$mobile-breakpoint: 800px; 
+
+
+//graphic profile colors
 $red: #E3170A; 
 $grey: #B6BDB5;
 $dark-blue: #011827;
 $blue: #36769D;
 $light-blue:  #8ACFE5; 
-
 
 
 * {
@@ -40,57 +43,60 @@ $light-blue:  #8ACFE5;
 }
 
 body {
-    background-color: white;
-    @include roboto;
-    width: 100%;
-    max-width: 100%;
+background-color: white;
+@include roboto;
+width: 480px;
+max-width: 100%;
+min-width: 480px; //min width for mobile
 }
 
-/* Header and navbar styles*/
+// Header and navbar styles
 header {
-    display: flex;
+
+//Universal styles
+display: flex;
+color: white;
+width: 100%;
+background-color: $dark-blue; 
+
+    //desktop first
     padding: 16px 16px 0px 16px;
-    color: white;
-    width: 100%;
     height: 100px;
-    background-color: $dark-blue; 
 
+    //mobile second
+    @include breakpoint($mobile-breakpoint) {
+    padding: 20px;
+    height: 80px;
 }
-
+}
 
 header h1 {   
 display: inline;
 @include roboto-bold;
 
-//desktop
-
     font-size: 40px;
     padding: 44px 0px 0px 20px;
-
-
- @include breakpoint($tablet-breakpoint) {
-    font-size: 24px;
-    width: 50px;
-    
-     }
     
     @include breakpoint($mobile-breakpoint) {
-    font-size: 24px;
+    padding: 0 0 0 10px;
     
+    font-size: 24px;
+    width: 50px;    
 }
 }
-
 
 #navbar {
 display: flex;
-padding-top: 24px;
 font-weight: 500;
 background-color: $dark-blue;
 list-style-type: none;
 justify-content: center;
 
+    padding-top: 24px;
 
-
+@include breakpoint($mobile-breakpoint) {
+     padding: 0; 
+}
 }
 
 #navbar a {
@@ -99,15 +105,9 @@ color:white;
 padding: 20px;
 text-decoration: none;
 
- @include breakpoint($tablet-breakpoint) {
-   visibility: hidden ;
-
- }
-
  @include breakpoint($mobile-breakpoint) {
     visibility: hidden;
-}
-    
+} 
 }
 
 
@@ -120,7 +120,7 @@ text-decoration: none;
  text-align: center;
 }
 
-/* First page styles */
+//First page styles
 #homeImg {
  width: 100%;
  margin: 0 auto;
@@ -135,7 +135,6 @@ text-decoration: none;
  justify-content: center;
  gap: 20px;
  
-    /* need to overlap homeImg*/
 }
 
 
