@@ -9,6 +9,8 @@ body {
   background-color: white;
   font-family: "roboto", sans-serif;
   font-weight: 400;
+  width: 100%;
+  max-width: 100%;
 }
 
 /* Header and navbar styles*/
@@ -23,9 +25,21 @@ header {
 
 header h1 {
   display: inline;
-  padding: 44px 0px 0px 20px;
   font-family: "roboto", sans-serif;
   font-weight: 500;
+  font-size: 40px;
+  padding: 44px 0px 0px 20px;
+}
+@media screen and (max-width: 800px) {
+  header h1 {
+    font-size: 24px;
+    width: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 24px;
+  }
 }
 
 #navbar {
@@ -42,6 +56,16 @@ header h1 {
   color: white;
   padding: 20px;
   text-decoration: none;
+}
+@media screen and (max-width: 800px) {
+  #navbar a {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 480px) {
+  #navbar a {
+    visibility: hidden;
+  }
 }
 
 #navbar a:hover {
@@ -143,8 +167,10 @@ header h1 {
 
 h2 {
   text-align: center;
-  margin: 20px 20px;
+  margin: 0 20px 80px 20px;
   font-size: 28px;
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
 }
 
 #challenges {
@@ -175,7 +201,7 @@ small {
 }
 
 .card h3 {
-  font-size: 36px;
+  font-size: 28px;
   font-family: "roboto", sans-serif;
   font-weight: 400;
 }
@@ -276,8 +302,7 @@ small {
 
 footer {
   display: flex;
-  margin: 0 120px 0 120px;
-  padding: 120px 0 120px 0;
+  padding: 120px 120px 120px 120px;
   gap: 80px;
   height: 467px;
   width: 100%;
