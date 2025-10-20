@@ -87,6 +87,7 @@ header h1 {
 .btn-container {
   display: flex;
   justify-content: center;
+  padding: 80px 0;
   gap: 20px;
   bottom: -5%;
   left: 50%;
@@ -138,6 +139,20 @@ header h1 {
     height: 40px;
     text-decoration: underline;
     font-size: 16px;
+  }
+}
+
+.split .btn {
+  color: white;
+  background-color: #E3170A;
+  text-decoration: none;
+}
+@media screen and (max-width: 800px) {
+  .split .btn {
+    height: 56px;
+    width: 250px;
+    font-size: 18px;
+    margin: 20px 0;
   }
 }
 
@@ -212,25 +227,46 @@ header h1 {
   font-size: 18px;
 }
 
+#challenges {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 100px;
+}
+@media screen and (max-width: 800px) {
+  #challenges {
+    margin: 0;
+  }
+}
+
 h2 {
   text-align: center;
-  margin: 0 20px 80px 20px;
-  font-size: 36px;
   font-family: "roboto", sans-serif;
   font-weight: 400;
+  margin: 0 20px 80px 20px;
+  font-size: 36px;
 }
 @media screen and (max-width: 800px) {
   h2 {
-    margin: 80px 0 40px 0;
+    margin: 80px 0 20px 0;
     font-size: 32px;
   }
 }
 
-#challenges {
+.card-container {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  margin: 10px 100px;
+  gap: 20px;
+  overflow: hidden;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+@media screen and (max-width: 800px) {
+  .card-container {
+    scroll-snap-type: x mandatory;
+    overflow-x: visible;
+    justify-content: flex-start;
+  }
 }
 
 .card {
@@ -239,8 +275,13 @@ h2 {
   background-color: white;
   margin: 10px;
   border-radius: 5px;
-  overflow: hidden;
   box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 800px) {
+  .card {
+    flex: 0 0 100%;
+    min-width: 100%;
+  }
 }
 
 .card img {
@@ -297,12 +338,17 @@ small {
 #quote {
   display: flex;
   flex-direction: column;
-  height: 500px;
+  padding: 200px;
   width: 100%;
   background-color: #011827;
   text-align: center;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 800px) {
+  #quote {
+    padding: 100px 10px;
+  }
 }
 
 #quote q {
@@ -320,17 +366,48 @@ small {
   flex-direction: column;
   margin-bottom: 200px;
 }
+@media screen and (max-width: 800px) {
+  #block {
+    height: auto;
+    margin-bottom: 100px;
+  }
+}
 
 .split {
   display: flex;
   flex-direction: row;
-  height: 460px;
+  height: auto;
   width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .split {
+    flex-direction: column;
+  }
+}
+
+.split:last-of-type {
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 800px) {
+  .split:last-of-type {
+    flex-direction: column;
+  }
 }
 
 .splitImg {
   display: flex;
   width: 50%;
+}
+@media screen and (max-width: 800px) {
+  .splitImg {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #block img {
+    width: 100%;
+  }
 }
 
 .splitTxt {
@@ -340,6 +417,12 @@ small {
   width: 50%;
   background-color: white;
   padding: 100px;
+}
+@media screen and (max-width: 800px) {
+  .splitTxt {
+    width: 100%;
+    padding: 40px 20px;
+  }
 }
 
 .splitTxt h3 {
@@ -355,7 +438,7 @@ small {
 
 footer {
   display: flex;
-  padding: 120px 120px 120px 120px;
+  padding: 120px;
   gap: 80px;
   height: 467px;
   width: 100%;
@@ -363,9 +446,22 @@ footer {
   background-color: #011827;
   font-size: 18px;
 }
+@media screen and (max-width: 800px) {
+  footer {
+    padding: 80px 20px;
+    gap: 40px;
+    height: auto;
+    flex-direction: column;
+  }
+}
 
-.footerTxt__1 {
+.footerTxt:nth-child(1) {
   width: 50%;
+}
+@media screen and (max-width: 800px) {
+  .footerTxt:nth-child(1) {
+    width: 100%;
+  }
 }
 
 footer h3 {
