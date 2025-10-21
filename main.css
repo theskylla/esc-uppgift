@@ -258,16 +258,16 @@ h2 {
   gap: 1.25rem;
   overflow: hidden;
   flex-direction: row;
+  padding: 0 200px;
 }
 @media screen and (max-width: 800px) {
   .card-container {
     justify-content: flex-start;
+    gap: 1.25rem;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     overflow-x: auto;
-    padding-left: 2.5rem;
-    padding-right: 0;
-    gap: 1.25rem;
+    padding: 0 2.5rem 0 0;
     width: 100%;
   }
 }
@@ -278,7 +278,6 @@ h2 {
   background-color: white;
   margin: 0.625rem;
   border-radius: 5px;
-  min-width: 300px;
   box-shadow: 0px 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.1);
 }
 @media screen and (max-width: 800px) {
@@ -342,12 +341,12 @@ small {
 #quote {
   display: flex;
   flex-direction: column;
-  padding: 12.5rem;
   width: 100%;
   background-color: #011827;
   text-align: center;
   align-items: center;
   justify-content: center;
+  padding: 12.5rem;
 }
 @media screen and (max-width: 800px) {
   #quote {
@@ -368,14 +367,14 @@ small {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1280px;
 }
 
 .split {
   display: flex;
+  width: 100%;
   flex-direction: row;
   height: 31.25rem;
-  width: 100%;
-  max-width: 1280px;
 }
 @media screen and (max-width: 800px) {
   .split {
@@ -414,8 +413,8 @@ small {
 .split-text {
   display: flex;
   flex-direction: column;
-  width: 50%;
   background-color: white;
+  width: 50%;
   padding: 6vw;
 }
 @media screen and (max-width: 800px) {
@@ -438,13 +437,13 @@ small {
 
 footer {
   display: flex;
-  padding: 11.25rem;
-  gap: 5rem;
-  height: 29rem;
   width: 100%;
   color: white;
   background-color: #011827;
   font-size: 1.125rem;
+  padding: 11.25rem;
+  gap: 5rem;
+  height: 29rem;
 }
 @media screen and (max-width: 800px) {
   footer {
