@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: white;
+  background-color: zwhite;
   font-family: "roboto", sans-serif;
   font-weight: 400;
   max-width: 100%;
@@ -258,13 +258,17 @@ h2 {
   gap: 20px;
   overflow: hidden;
   flex-direction: row;
-  flex-wrap: nowrap;
 }
 @media screen and (max-width: 800px) {
   .card-container {
-    scroll-snap-type: x mandatory;
-    overflow-x: visible;
     justify-content: flex-start;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    padding-left: 40px;
+    padding-right: 0;
+    gap: 20px;
+    width: 100%;
   }
 }
 
@@ -274,12 +278,12 @@ h2 {
   background-color: white;
   margin: 10px;
   border-radius: 5px;
+  min-width: 300px;
   box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 @media screen and (max-width: 800px) {
   .card {
-    flex: 0 0 100%;
-    min-width: 100%;
+    flex: 0 0 85%;
   }
 }
 
@@ -375,12 +379,13 @@ small {
 .split {
   display: flex;
   flex-direction: row;
-  height: auto;
+  height: 500px;
   width: 100%;
 }
 @media screen and (max-width: 800px) {
   .split {
     flex-direction: column;
+    height: auto;
   }
 }
 
