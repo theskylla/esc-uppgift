@@ -9,7 +9,6 @@ body {
   background-color: white;
   font-family: "roboto", sans-serif;
   font-weight: 400;
-  width: 480px;
   max-width: 100%;
   min-width: 480px;
 }
@@ -79,7 +78,7 @@ header h1 {
   text-align: center;
 }
 
-#homeImg {
+#home-image {
   width: 100%;
   margin: 0 auto;
 }
@@ -300,12 +299,12 @@ small {
   font-weight: 400;
 }
 
-.cardTxt img {
+.stars img {
   height: 14px;
   width: 14px;
 }
 
-.starsTxt {
+.stars-text {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -318,7 +317,7 @@ small {
   gap: 4px;
 }
 
-.cardTxt {
+.card-text {
   padding: 20px;
   display: flex;
   align-items: flex-start;
@@ -360,14 +359,14 @@ small {
   margin: 40px;
 }
 
-#block {
+#split.container {
   height: 920px;
   display: flex;
   flex-direction: column;
   margin-bottom: 200px;
 }
 @media screen and (max-width: 800px) {
-  #block {
+  #split.container {
     height: auto;
     margin-bottom: 100px;
   }
@@ -394,23 +393,23 @@ small {
   }
 }
 
-.splitImg {
+.split-image {
   display: flex;
   width: 50%;
 }
 @media screen and (max-width: 800px) {
-  .splitImg {
+  .split-image {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 800px) {
-  #block img {
+  #split-container img {
     width: 100%;
   }
 }
 
-.splitTxt {
+.split-text {
   display: flex;
   padding: 20px;
   flex-direction: column;
@@ -419,19 +418,19 @@ small {
   padding: 100px;
 }
 @media screen and (max-width: 800px) {
-  .splitTxt {
+  .split-text {
     width: 100%;
     padding: 40px 20px;
   }
 }
 
-.splitTxt h3 {
+.split-text h3 {
   font-size: 32px;
   font-family: "roboto", sans-serif;
   font-weight: 700;
 }
 
-.splitTxt p {
+.split-text p {
   padding: 24px 0 24px 0;
   font-size: 24px;
 }
@@ -455,11 +454,11 @@ footer {
   }
 }
 
-.footerTxt:nth-child(1) {
+.footer-text:nth-child(1) {
   width: 50%;
 }
 @media screen and (max-width: 800px) {
-  .footerTxt:nth-child(1) {
+  .footer-text:nth-child(1) {
     width: 100%;
   }
 }

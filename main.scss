@@ -45,7 +45,7 @@ $light-blue:  #8ACFE5;
 body {
 background-color: white;
 @include roboto;
-width: 480px;
+
 max-width: 100%;
 min-width: 480px; //min width for mobile
 }
@@ -120,7 +120,7 @@ text-decoration: none;
 }
 
 //First page styles
-#homeImg {
+#home-image {
  width: 100%;
  margin: 0 auto;
  
@@ -360,12 +360,12 @@ flex-wrap: nowrap;
     @include roboto;
  } 
 
- .cardTxt img {
+ .stars img {
     height: 14px;
     width: 14px;
  }
 
- .starsTxt {
+ .stars-text {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -378,7 +378,7 @@ flex-wrap: nowrap;
     gap: 4px;
  }
 
- .cardTxt {
+ .card-text {
     padding: 20px;
     display: flex;
     align-items: flex-start;
@@ -425,7 +425,7 @@ flex-wrap: nowrap;
     margin: 40px;
 }
 
-#block {
+#split.container {
 height: 920px;
 display: flex;
 flex-direction: column;
@@ -464,7 +464,7 @@ width: 100%;
 
 }
 
-.splitImg {
+.split-image {
     display: flex;
     width: 50%;
 
@@ -474,7 +474,7 @@ width: 100%;
  }
 }
 
-#block img {
+#split-container img {
     @include breakpoint($mobile-breakpoint) {
     width: 100%;
     
@@ -482,7 +482,7 @@ width: 100%;
     
 }
 
-.splitTxt {
+.split-text {
     display: flex;
     padding: 20px;
     flex-direction: column;
@@ -497,13 +497,13 @@ width: 100%;
  }
 }
 
-.splitTxt h3 {
+.split-text h3 {
     font-size: 32px;
      
     @include roboto-bolder;
 }
 
-.splitTxt p {
+.split-text p {
     padding: 24px 0 24px 0;
     font-size: 24px;
 }
@@ -529,7 +529,7 @@ footer {
     
 }
 
-.footerTxt:nth-child(1) {
+.footer-text:nth-child(1) {
     width: 50%;
 
      @include breakpoint($mobile-breakpoint) {
