@@ -24,7 +24,7 @@
 }
 
 $desktop-breakpoint: 1280px; //same as in figma
-$mobile-breakpoint: 800px; 
+$mobile-breakpoint: 860px; 
 
 
 //graphic profile colors
@@ -45,8 +45,7 @@ body {
 background-color: zwhite;
 @include roboto;
 max-width: 100%;
-width: 480px;
-min-width:  5rem; //min width for mobile
+min-width:  480px; //min width for mobile
 font-size: 16px;
 }
 
@@ -60,7 +59,7 @@ width: 100%;
 background-color: $dark-blue; 
 
     //desktop first
-    padding: 1rem 0 1rem;
+    padding: 1.5rem;
     height: 6.25rem;
 
     //mobile second
@@ -73,7 +72,7 @@ background-color: $dark-blue;
 header h1 {   
 @include roboto-bold;
     font-size: 2.5rem;
-    padding: 2.188rem 0 0 1.25rem;
+    padding: 2.5rem 0 0 1.25rem;
 
     
     @include breakpoint($mobile-breakpoint) {
@@ -91,7 +90,7 @@ background-color: $dark-blue;
 list-style-type: none;
 justify-content: center;
 
-    padding-top: 1.5rem;
+    padding-top: 3rem;
 
 @include breakpoint($mobile-breakpoint) {
      padding: 0; 
@@ -128,7 +127,7 @@ text-decoration: none;
 .btn-container {
  display: flex;
  justify-content: center;
- padding: 5rem 0;
+ padding: 4.5rem 0;
 
  gap: 1.25rem;
  bottom: -5%;
@@ -226,14 +225,12 @@ text-decoration: none;
  display: flex;
  background-color: white;
  align-items: center;
-
  margin: 6.25rem 0 6.25rem 0;
  overflow: hidden;
  justify-content: center;
 
    @include breakpoint($mobile-breakpoint) {
    scroll-snap-type: x mandatory;
-   
    margin: 0 0 2.5rem 0;
    overflow-x: auto;
    justify-content: flex-start;
@@ -249,7 +246,8 @@ text-decoration: none;
 
     @include breakpoint($mobile-breakpoint) {
     flex: 0 0 100%;
-    min-width: 80%;
+    justify-content: center;
+    
 
  }
    
@@ -258,7 +256,6 @@ text-decoration: none;
 .review img {
  border-radius: 50%;
  margin-right: 1.25rem;
-
  height: 6rem;
  width: 6rem;
 
@@ -268,15 +265,25 @@ text-decoration: none;
  }
 }
 
+.review-text {
+    max-width: 25rem;
+
+}
+
 .review q {
     font-size: 1.5rem;
     font-style: italic;
+
 }
 
 .review p {
     padding-top: 0.625rem;
     font-size: 1.125rem;
-    
+    width: 18rem;
+
+    @include breakpoint($mobile-breakpoint) {
+    width: auto;
+ }
 }
 
  #challenges {
@@ -310,13 +317,13 @@ justify-content: center;
 gap: 1.25rem; 
 overflow: hidden;
 flex-direction: row;
-
+  
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     overflow-x: auto;
 width: 100%;
 margin: 0 auto;
-padding: 0 clamp(40px, 8vw, 200px);
+
 
  @include breakpoint($mobile-breakpoint) {
     justify-content: flex-start;
@@ -337,8 +344,14 @@ padding: 0 clamp(40px, 8vw, 200px);
     margin: 0.625rem;
     border-radius: 5px;
     box-shadow: 0px 0px 0.25rem 0.25rem rgba(0,0,0,0.1);
+    
 
-    min-width: 325px;
+    max-height: 30rem;
+    max-width: 24rem;
+
+    min-height: 18.45rem;
+    min-width: 16rem;
+
 
     @include breakpoint($mobile-breakpoint) {
     flex: 0 0 calc(85%);
@@ -408,7 +421,7 @@ padding: 0 clamp(40px, 8vw, 200px);
     align-items: center;
     justify-content: center;
 
-    padding: 12.5rem;
+    padding: 8rem 12.5rem;
  
 
      @include breakpoint($mobile-breakpoint) {
@@ -486,7 +499,8 @@ flex-direction: column;
 background-color: white;
     
     width: 50%;
-    padding: clamp(30px, 6vw, 150px);
+    max-width: 36rem;
+    padding: clamp(1.5rem, 6vw, 9rem);
    
 
     @include breakpoint($mobile-breakpoint) {
@@ -513,10 +527,11 @@ footer {
     color:white;
     background-color: $dark-blue;
     font-size: 1.125rem;
+    line-height: 1.5;
 
-    padding: 11.25rem;
-    gap: 5rem;
-    height: 29rem;
+    padding: 11.25rem 6.5rem;
+    gap: 12vw;
+    height: auto;
 
     @include breakpoint($mobile-breakpoint) {
     padding: 5rem 1.25rem;
@@ -530,11 +545,11 @@ footer {
 }
 
 .footer-text:nth-child(1) {
-width: 50%;
+width: 45%;
+
 
 @include breakpoint($mobile-breakpoint) {
     width: 100%;
-    
  }
 
 }

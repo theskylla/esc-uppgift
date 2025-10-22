@@ -10,8 +10,7 @@ body {
   font-family: "roboto", sans-serif;
   font-weight: 400;
   max-width: 100%;
-  width: 480px;
-  min-width: 5rem;
+  min-width: 480px;
   font-size: 16px;
 }
 
@@ -20,10 +19,10 @@ header {
   color: white;
   width: 100%;
   background-color: #011827;
-  padding: 1rem 0 1rem;
+  padding: 1.5rem;
   height: 6.25rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 860px) {
   header {
     padding: 1.25rem;
     height: 5rem;
@@ -34,9 +33,9 @@ header h1 {
   font-family: "roboto", sans-serif;
   font-weight: 500;
   font-size: 2.5rem;
-  padding: 2.188rem 0 0 1.25rem;
+  padding: 2.5rem 0 0 1.25rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 860px) {
   header h1 {
     padding: 0 0 0 0.625rem;
     font-size: 1.5rem;
@@ -50,9 +49,9 @@ header h1 {
   background-color: #011827;
   list-style-type: none;
   justify-content: center;
-  padding-top: 1.5rem;
+  padding-top: 3rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 860px) {
   #navbar {
     padding: 0;
   }
@@ -64,7 +63,7 @@ header h1 {
   padding: 1.25rem;
   text-decoration: none;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 860px) {
   #navbar a {
     visibility: hidden;
   }
@@ -87,12 +86,12 @@ header h1 {
 .btn-container {
   display: flex;
   justify-content: center;
-  padding: 5rem 0;
+  padding: 4.5rem 0;
   gap: 1.25rem;
   bottom: -5%;
   left: 50%;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 860px) {
   .btn-container {
     flex-direction: column;
     align-items: center;
@@ -109,7 +108,7 @@ header h1 {
   position: absolute;
   transform: translate(-50%);
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 860px) {
   .__halfCover {
     padding: 2.5rem 0;
     position: static;
@@ -133,7 +132,7 @@ header h1 {
   color: white;
   background-color: #E3170A;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 860px) {
   .btn__red {
     color: #36769D;
     background-color: transparent;
@@ -148,7 +147,7 @@ header h1 {
   background-color: #E3170A;
   text-decoration: none;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 860px) {
   .split .btn {
     height: 3.5rem;
     width: 15.625rem;
@@ -184,7 +183,7 @@ header h1 {
   overflow: hidden;
   justify-content: center;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 860px) {
   #reviews {
     scroll-snap-type: x mandatory;
     margin: 0 0 2.5rem 0;
@@ -198,10 +197,10 @@ header h1 {
   flex-direction: row;
   padding: 1.25rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 860px) {
   .review {
     flex: 0 0 100%;
-    min-width: 80%;
+    justify-content: center;
   }
 }
 
@@ -211,11 +210,15 @@ header h1 {
   height: 6rem;
   width: 6rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 860px) {
   .review img {
     height: 6rem;
     width: 6rem;
   }
+}
+
+.review-text {
+  max-width: 25rem;
 }
 
 .review q {
@@ -226,6 +229,12 @@ header h1 {
 .review p {
   padding-top: 0.625rem;
   font-size: 1.125rem;
+  width: 18rem;
+}
+@media screen and (max-width: 860px) {
+  .review p {
+    width: auto;
+  }
 }
 
 #challenges {
@@ -234,7 +243,7 @@ header h1 {
   align-items: center;
   margin: 0 6.25rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 860px) {
   #challenges {
     margin: 0;
   }
@@ -247,7 +256,7 @@ h2 {
   margin: 0 1.25rem 5rem 1.25rem;
   font-size: 2.25rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 860px) {
   h2 {
     margin: 5rem 0 1.25rem 0;
     font-size: 2rem;
@@ -265,9 +274,8 @@ h2 {
   overflow-x: auto;
   width: 100%;
   margin: 0 auto;
-  padding: 0 clamp(40px, 8vw, 200px);
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 860px) {
   .card-container {
     justify-content: flex-start;
     scroll-behavior: smooth;
@@ -286,9 +294,12 @@ h2 {
   margin: 0.625rem;
   border-radius: 5px;
   box-shadow: 0px 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.1);
-  min-width: 325px;
+  max-height: 30rem;
+  max-width: 24rem;
+  min-height: 18.45rem;
+  min-width: 16rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 860px) {
   .card {
     flex: 0 0 85%;
   }
@@ -354,9 +365,9 @@ small {
   text-align: center;
   align-items: center;
   justify-content: center;
-  padding: 12.5rem;
+  padding: 8rem 12.5rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 860px) {
   #quote {
     padding: 6.25rem 0.625rem;
   }
@@ -367,7 +378,7 @@ small {
   font-size: 1.75rem;
   width: 38rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 860px) {
   #quote q {
     width: auto;
   }
@@ -389,7 +400,7 @@ small {
   flex-direction: row;
   height: 31.25rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 860px) {
   .split {
     flex-direction: column;
     height: auto;
@@ -400,7 +411,7 @@ small {
   flex-direction: row-reverse;
   margin-bottom: 12.5rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 860px) {
   .split:last-of-type {
     flex-direction: column;
     margin-bottom: 6.25rem;
@@ -411,13 +422,13 @@ small {
   display: flex;
   width: 50%;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 860px) {
   .split-image {
     width: 100%;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 860px) {
   #split-container img {
     width: 100%;
   }
@@ -428,9 +439,10 @@ small {
   flex-direction: column;
   background-color: white;
   width: 50%;
-  padding: clamp(30px, 6vw, 150px);
+  max-width: 36rem;
+  padding: clamp(1.5rem, 6vw, 9rem);
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 860px) {
   .split-text {
     width: 100%;
     padding: 2.5rem 1.25rem;
@@ -454,11 +466,12 @@ footer {
   color: white;
   background-color: #011827;
   font-size: 1.125rem;
-  padding: 11.25rem;
-  gap: 5rem;
-  height: 29rem;
+  line-height: 1.5;
+  padding: 11.25rem 6.5rem;
+  gap: 12vw;
+  height: auto;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 860px) {
   footer {
     padding: 5rem 1.25rem;
     gap: 2.5rem;
@@ -468,9 +481,9 @@ footer {
 }
 
 .footer-text:nth-child(1) {
-  width: 50%;
+  width: 45%;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 860px) {
   .footer-text:nth-child(1) {
     width: 100%;
   }
