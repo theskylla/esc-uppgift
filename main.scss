@@ -34,6 +34,7 @@ $dark-blue: #011827;
 $blue: #36769D;
 $light-blue:  #8ACFE5; 
 
+//still want to fix: cards 1000-860px, split over 1280px
 
 * {
   margin: 0;
@@ -451,6 +452,7 @@ margin: 0 auto;
 display: flex;
 flex-direction: column;
 align-items: center;  
+
 }
 
 
