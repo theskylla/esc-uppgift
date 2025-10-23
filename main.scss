@@ -24,7 +24,7 @@
 }
 
 $desktop-breakpoint: 1280px; //same as in figma
-$mobile-breakpoint: 860px; 
+$mobile-breakpoint: 870px; 
 
 
 //graphic profile colors
@@ -34,7 +34,7 @@ $dark-blue: #011827;
 $blue: #36769D;
 $light-blue:  #8ACFE5; 
 
-//still want to fix: cards 1000-860px, split over 1280px
+//still want to fix: cards 1000-860px, 
 
 * {
   margin: 0;
@@ -103,7 +103,7 @@ height: 7.75rem;
 display: block;
 color:white;
 font-size: 1.5rem;
-padding: 1.5rem 4rem;
+padding: 1.5rem 6vw;
 text-decoration: none;
 
  @include breakpoint($mobile-breakpoint) {
@@ -115,7 +115,7 @@ text-decoration: none;
     color: $light-blue;
 }
 
-#home {
+.home {
  position: relative;
  text-align: center;
 }
@@ -490,9 +490,9 @@ margin-bottom: 8rem;
 
 .split-image {
     display: flex;
-    height: 460px;
     width: 50%;
-
+   
+   
     @include breakpoint($mobile-breakpoint) {
     width: 100%;
     height: auto;
@@ -501,6 +501,8 @@ margin-bottom: 8rem;
 }
 
 .split-container img {
+    width: 100%;
+     object-fit: cover;
     @include breakpoint($mobile-breakpoint) {
     width: 100%;  
  }
@@ -541,7 +543,6 @@ footer {
     color:white;
     background-color: $dark-blue;
     font-size: 1.125rem;
-    line-height: 1.5;
 
     padding: 10rem 6.5rem;
     gap: 12vw;
