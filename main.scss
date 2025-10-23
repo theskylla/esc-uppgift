@@ -121,7 +121,7 @@ text-decoration: none;
 }
 
 //First page styles
-#home-image {
+.home-image {
  height: 468px;
  width: 100%;
  object-fit: cover;
@@ -178,7 +178,7 @@ font-size: 1.5rem;
 @include roboto-bold;
 }
 
-.btn__red {
+.btn--red {
  color: white;
  background-color: $red;
 
@@ -206,19 +206,19 @@ text-decoration: none;
 }
 
 
-.btn__blue {
+.btn--blue {
  color: black;
  background-color: $light-blue;
 
 }
 
-.btn__blueLined {
+.btn--blueLined {
  background-color: $dark-blue;
  color: $light-blue;
  border: 0.125rem solid $light-blue;
 }
 
-.btn__smallRed {
+.btn--smallRed {
     color: white;
     background-color: $red;
     width: 11.2rem;
@@ -226,7 +226,7 @@ text-decoration: none;
     font-size: 1rem;
 }
 
-#reviews {
+.reviews {
  display: flex;
  background-color: white;
  align-items: center;
@@ -270,7 +270,7 @@ text-decoration: none;
  }
 }
 
-.review-text {
+.review__text {
     max-width: 26rem;
 
 }
@@ -292,7 +292,7 @@ text-decoration: none;
  }
 }
 
- #challenges {
+ .challenges {
  display: flex;
  flex-direction: column;
  align-items: center;
@@ -385,7 +385,7 @@ margin: 0 auto;
     width: 0.875rem;
  }
 
- .stars-text {
+ .stars__text {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -404,7 +404,7 @@ margin: 0 auto;
     gap: 0.25rem;
  }
 
- .card-text {
+ .card__text {
     padding: 1.25rem;
     display: flex;
     align-items: flex-start;
@@ -423,8 +423,7 @@ margin: 0 auto;
  }
 
 
-
-#quote {
+.quote {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -443,8 +442,7 @@ margin: 0 auto;
  }
     
 }
-
-#quote q {
+.quote q {
     color: white;
     font-size: 1.75rem; 
     width: 38rem;  
@@ -455,12 +453,12 @@ margin: 0 auto;
  }
 }
 
-#quote .btn {
+.quote .btn {
     margin: 2.5rem;
 }
 
 
-#split.container {
+.split.container {
 display: flex;
 flex-direction: column;
 align-items: center;  
@@ -502,13 +500,13 @@ margin-bottom: 8rem;
  }
 }
 
-#split-container img {
+.split-container img {
     @include breakpoint($mobile-breakpoint) {
     width: 100%;  
  }
 }
 
-.split-text {
+.split__text {
 display: flex; 
 flex-direction: column;
 background-color: white;
@@ -526,13 +524,13 @@ justify-content: center;
  }
 }
 
-.split-text h3 {
+.split__text h3 {
     font-size: 2rem;
      
     @include roboto-bolder;
 }
 
-.split-text p {
+.split__text p {
     padding: 1.5rem 0 1.5rem 0;
     font-size: 1.5rem;
 }
@@ -560,7 +558,7 @@ footer {
     
 }
 
-.footer-text:nth-child(1) {
+.footer__text:nth-child(1) {
 width: 45%;
 
 

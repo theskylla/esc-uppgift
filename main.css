@@ -80,7 +80,7 @@ header h1 {
   text-align: center;
 }
 
-#home-image {
+.home-image {
   height: 468px;
   width: 100%;
   -o-object-fit: cover;
@@ -133,12 +133,12 @@ header h1 {
   font-weight: 500;
 }
 
-.btn__red {
+.btn--red {
   color: white;
   background-color: #E3170A;
 }
 @media screen and (max-width: 860px) {
-  .btn__red {
+  .btn--red {
     color: #36769D;
     background-color: transparent;
     height: 2.5rem;
@@ -161,18 +161,18 @@ header h1 {
   }
 }
 
-.btn__blue {
+.btn--blue {
   color: black;
   background-color: #8ACFE5;
 }
 
-.btn__blueLined {
+.btn--blueLined {
   background-color: #011827;
   color: #8ACFE5;
   border: 0.125rem solid #8ACFE5;
 }
 
-.btn__smallRed {
+.btn--smallRed {
   color: white;
   background-color: #E3170A;
   width: 11.2rem;
@@ -180,7 +180,7 @@ header h1 {
   font-size: 1rem;
 }
 
-#reviews {
+.reviews {
   display: flex;
   background-color: white;
   align-items: center;
@@ -189,7 +189,7 @@ header h1 {
   justify-content: center;
 }
 @media screen and (max-width: 860px) {
-  #reviews {
+  .reviews {
     scroll-snap-type: x mandatory;
     margin: 0 0 1.5rem 0;
     overflow-x: auto;
@@ -222,7 +222,7 @@ header h1 {
   }
 }
 
-.review-text {
+.review__text {
   max-width: 26rem;
 }
 
@@ -243,14 +243,14 @@ header h1 {
   }
 }
 
-#challenges {
+.challenges {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 6.25rem;
 }
 @media screen and (max-width: 860px) {
-  #challenges {
+  .challenges {
     margin: 0;
   }
 }
@@ -333,7 +333,7 @@ small {
   width: 0.875rem;
 }
 
-.stars-text {
+.stars__text {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -341,7 +341,7 @@ small {
   padding: 0.25rem 0 1.75rem 0;
 }
 @media screen and (max-width: 860px) {
-  .stars-text {
+  .stars__text {
     justify-content: left;
   }
 }
@@ -351,7 +351,7 @@ small {
   gap: 0.25rem;
 }
 
-.card-text {
+.card__text {
   padding: 1.25rem;
   display: flex;
   align-items: flex-start;
@@ -368,7 +368,7 @@ small {
   align-self: flex-end;
 }
 
-#quote {
+.quote {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -380,27 +380,27 @@ small {
   padding: 8rem 12.5rem;
 }
 @media screen and (max-width: 860px) {
-  #quote {
+  .quote {
     padding: 6.25rem 0.625rem;
   }
 }
 
-#quote q {
+.quote q {
   color: white;
   font-size: 1.75rem;
   width: 38rem;
 }
 @media screen and (max-width: 860px) {
-  #quote q {
+  .quote q {
     width: auto;
   }
 }
 
-#quote .btn {
+.quote .btn {
   margin: 2.5rem;
 }
 
-#split.container {
+.split.container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -442,12 +442,12 @@ small {
 }
 
 @media screen and (max-width: 860px) {
-  #split-container img {
+  .split-container img {
     width: 100%;
   }
 }
 
-.split-text {
+.split__text {
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -456,19 +456,19 @@ small {
   padding: clamp(3rem, 7.5vw, 9rem);
 }
 @media screen and (max-width: 860px) {
-  .split-text {
+  .split__text {
     width: 100%;
     padding: 2.5rem 1.25rem;
   }
 }
 
-.split-text h3 {
+.split__text h3 {
   font-size: 2rem;
   font-family: "roboto", sans-serif;
   font-weight: 700;
 }
 
-.split-text p {
+.split__text p {
   padding: 1.5rem 0 1.5rem 0;
   font-size: 1.5rem;
 }
@@ -493,11 +493,11 @@ footer {
   }
 }
 
-.footer-text:nth-child(1) {
+.footer__text:nth-child(1) {
   width: 45%;
 }
 @media screen and (max-width: 860px) {
-  .footer-text:nth-child(1) {
+  .footer__text:nth-child(1) {
     width: 100%;
   }
 }
