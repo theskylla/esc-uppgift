@@ -22,7 +22,7 @@ header {
   padding: 1.5rem;
   height: 6.25rem;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 870px) {
   header {
     padding: 1.25rem;
     height: 5rem;
@@ -35,7 +35,7 @@ header h1 {
   font-size: 2.5rem;
   padding: 2.5rem 0 0 1.25rem;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 870px) {
   header h1 {
     padding: 0 0 0 0.625rem;
     font-size: 1.5rem;
@@ -52,7 +52,7 @@ header h1 {
   height: 7.75rem;
   padding-top: 3rem;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 870px) {
   #navbar {
     padding: 0;
   }
@@ -62,10 +62,10 @@ header h1 {
   display: block;
   color: white;
   font-size: 1.5rem;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 6vw;
   text-decoration: none;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 870px) {
   #navbar a {
     visibility: hidden;
   }
@@ -75,7 +75,7 @@ header h1 {
   color: #8ACFE5;
 }
 
-#home {
+.home {
   position: relative;
   text-align: center;
 }
@@ -96,7 +96,7 @@ header h1 {
   bottom: -5%;
   left: 50%;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 870px) {
   .btn-container {
     flex-direction: column;
     align-items: center;
@@ -113,7 +113,7 @@ header h1 {
   position: absolute;
   transform: translate(-50%);
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 870px) {
   .__halfCover {
     padding: 2.5rem 0;
     position: static;
@@ -137,7 +137,7 @@ header h1 {
   color: white;
   background-color: #E3170A;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 870px) {
   .btn--red {
     color: #36769D;
     background-color: transparent;
@@ -152,7 +152,7 @@ header h1 {
   background-color: #E3170A;
   text-decoration: none;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 870px) {
   .split .btn {
     height: 4.25rem;
     width: 19.25rem;
@@ -188,7 +188,7 @@ header h1 {
   overflow: hidden;
   justify-content: center;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 870px) {
   .reviews {
     scroll-snap-type: x mandatory;
     margin: 0 0 1.5rem 0;
@@ -202,7 +202,7 @@ header h1 {
   flex-direction: row;
   padding: 1.25rem;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 870px) {
   .review {
     flex: 0 0 100%;
     justify-content: center;
@@ -215,7 +215,7 @@ header h1 {
   height: 6rem;
   width: 6rem;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 870px) {
   .review img {
     height: 4.5rem;
     width: 4.5rem;
@@ -237,7 +237,7 @@ header h1 {
   font-size: 1.125rem;
   width: 18rem;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 870px) {
   .review p {
     width: auto;
   }
@@ -249,7 +249,7 @@ header h1 {
   align-items: center;
   margin: 0 6.25rem;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 870px) {
   .challenges {
     margin: 0;
   }
@@ -262,7 +262,7 @@ h2 {
   margin: 0 1.25rem 5rem 1.25rem;
   font-size: 2.25rem;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 870px) {
   h2 {
     margin: 5rem 0 1.25rem 0;
     font-size: 2rem;
@@ -281,7 +281,7 @@ h2 {
   width: 100%;
   margin: 0 auto;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 870px) {
   .card-container {
     justify-content: flex-start;
     scroll-behavior: smooth;
@@ -305,7 +305,7 @@ h2 {
   min-height: 18.45rem;
   min-width: 16rem;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 870px) {
   .card {
     flex: 0 0 85%;
   }
@@ -340,7 +340,7 @@ small {
   width: 100%;
   padding: 0.25rem 0 1.75rem 0;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 870px) {
   .stars__text {
     justify-content: left;
   }
@@ -379,7 +379,7 @@ small {
   quotes: none;
   padding: 8rem 12.5rem;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 870px) {
   .quote {
     padding: 6.25rem 0.625rem;
   }
@@ -390,7 +390,7 @@ small {
   font-size: 1.75rem;
   width: 38rem;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 870px) {
   .quote q {
     width: auto;
   }
@@ -411,7 +411,7 @@ small {
   width: 100%;
   flex-direction: row;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 870px) {
   .split {
     flex-direction: column;
     height: auto;
@@ -422,7 +422,7 @@ small {
   flex-direction: row-reverse;
   margin-bottom: 8rem;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 870px) {
   .split:last-of-type {
     flex-direction: column;
     margin-bottom: 2.5rem;
@@ -431,17 +431,21 @@ small {
 
 .split-image {
   display: flex;
-  height: 460px;
   width: 50%;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 870px) {
   .split-image {
     width: 100%;
     height: auto;
   }
 }
 
-@media screen and (max-width: 860px) {
+.split-container img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 870px) {
   .split-container img {
     width: 100%;
   }
@@ -455,7 +459,7 @@ small {
   width: 50%;
   padding: clamp(3rem, 7.5vw, 9rem);
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 870px) {
   .split__text {
     width: 100%;
     padding: 2.5rem 1.25rem;
@@ -479,12 +483,11 @@ footer {
   color: white;
   background-color: #011827;
   font-size: 1.125rem;
-  line-height: 1.5;
   padding: 10rem 6.5rem;
   gap: 12vw;
   height: auto;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 870px) {
   footer {
     padding: 4rem 1.25rem;
     gap: 2.5rem;
@@ -496,7 +499,7 @@ footer {
 .footer__text:nth-child(1) {
   width: 45%;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 870px) {
   .footer__text:nth-child(1) {
     width: 100%;
   }
