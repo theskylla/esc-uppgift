@@ -90,6 +90,7 @@ font-weight: 500;
 background-color: $dark-blue;
 list-style-type: none;
 justify-content: center;
+height: 7.75rem;
 
     padding-top: 3rem;
 
@@ -101,7 +102,8 @@ justify-content: center;
 #navbar a {
 display: block;
 color:white;
-padding: 1.25rem;
+font-size: 1.5rem;
+padding: 1.5rem 4rem;
 text-decoration: none;
 
  @include breakpoint($mobile-breakpoint) {
@@ -120,7 +122,9 @@ text-decoration: none;
 
 //First page styles
 #home-image {
+ height: 468px;
  width: 100%;
+ object-fit: cover;
  margin: 0 auto;
  
 }
@@ -128,7 +132,7 @@ text-decoration: none;
 .btn-container {
  display: flex;
  justify-content: center;
- padding: 4.5rem 0;
+ padding: 4.5rem 0 5rem 0;
 
  gap: 1.25rem;
  bottom: -5%;
@@ -217,7 +221,7 @@ text-decoration: none;
 .btn__smallRed {
     color: white;
     background-color: $red;
-    width: 10rem;
+    width: 11.2rem;
     height: 2.75rem;
     font-size: 1rem;
 }
@@ -267,13 +271,14 @@ text-decoration: none;
 }
 
 .review-text {
-    max-width: 25rem;
+    max-width: 26rem;
 
 }
 
 .review q {
     font-size: 1.5rem;
     font-style: italic;
+    quotes: none
 
 }
 
@@ -421,6 +426,7 @@ margin: 0 auto;
     text-align: center;
     align-items: center;
     justify-content: center;
+    quotes: none;
 
     padding: 8rem 12.5rem;
  
@@ -459,9 +465,8 @@ align-items: center;
 .split {
 display: flex;
 width: 100%;
-
+    
     flex-direction: row;
-    height: 31.25rem;
 
 @include breakpoint($mobile-breakpoint) {
     flex-direction: column;
@@ -481,8 +486,8 @@ margin-bottom: 12.5rem;
 
 .split-image {
     display: flex;
+    height: 460px;
     width: 50%;
-
     @include breakpoint($mobile-breakpoint) {
     width: 100%;
     
@@ -499,10 +504,11 @@ margin-bottom: 12.5rem;
 display: flex; 
 flex-direction: column;
 background-color: white;
+justify-content: center;
     
     width: 50%;
-    max-width: 36rem;
-    padding: clamp(1.5rem, 6vw, 9rem);
+    
+    padding: clamp(3rem, 7.5vw, 9rem);
    
 
     @include breakpoint($mobile-breakpoint) {
@@ -531,7 +537,7 @@ footer {
     font-size: 1.125rem;
     line-height: 1.5;
 
-    padding: 11.25rem 6.5rem;
+    padding: 10rem 6.5rem;
     gap: 12vw;
     height: auto;
 

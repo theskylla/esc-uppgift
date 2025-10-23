@@ -49,6 +49,7 @@ header h1 {
   background-color: #011827;
   list-style-type: none;
   justify-content: center;
+  height: 7.75rem;
   padding-top: 3rem;
 }
 @media screen and (max-width: 860px) {
@@ -60,7 +61,8 @@ header h1 {
 #navbar a {
   display: block;
   color: white;
-  padding: 1.25rem;
+  font-size: 1.5rem;
+  padding: 1.5rem 4rem;
   text-decoration: none;
 }
 @media screen and (max-width: 860px) {
@@ -79,14 +81,17 @@ header h1 {
 }
 
 #home-image {
+  height: 468px;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin: 0 auto;
 }
 
 .btn-container {
   display: flex;
   justify-content: center;
-  padding: 4.5rem 0;
+  padding: 4.5rem 0 5rem 0;
   gap: 1.25rem;
   bottom: -5%;
   left: 50%;
@@ -170,7 +175,7 @@ header h1 {
 .btn__smallRed {
   color: white;
   background-color: #E3170A;
-  width: 10rem;
+  width: 11.2rem;
   height: 2.75rem;
   font-size: 1rem;
 }
@@ -218,12 +223,13 @@ header h1 {
 }
 
 .review-text {
-  max-width: 25rem;
+  max-width: 26rem;
 }
 
 .review q {
   font-size: 1.5rem;
   font-style: italic;
+  quotes: none;
 }
 
 .review p {
@@ -365,6 +371,7 @@ small {
   text-align: center;
   align-items: center;
   justify-content: center;
+  quotes: none;
   padding: 8rem 12.5rem;
 }
 @media screen and (max-width: 860px) {
@@ -398,7 +405,6 @@ small {
   display: flex;
   width: 100%;
   flex-direction: row;
-  height: 31.25rem;
 }
 @media screen and (max-width: 860px) {
   .split {
@@ -420,6 +426,7 @@ small {
 
 .split-image {
   display: flex;
+  height: 460px;
   width: 50%;
 }
 @media screen and (max-width: 860px) {
@@ -438,9 +445,9 @@ small {
   display: flex;
   flex-direction: column;
   background-color: white;
+  justify-content: center;
   width: 50%;
-  max-width: 36rem;
-  padding: clamp(1.5rem, 6vw, 9rem);
+  padding: clamp(3rem, 7.5vw, 9rem);
 }
 @media screen and (max-width: 860px) {
   .split-text {
@@ -467,7 +474,7 @@ footer {
   background-color: #011827;
   font-size: 1.125rem;
   line-height: 1.5;
-  padding: 11.25rem 6.5rem;
+  padding: 10rem 6.5rem;
   gap: 12vw;
   height: auto;
 }
