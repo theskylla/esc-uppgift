@@ -45,7 +45,6 @@ $light-blue:  #8ACFE5;
 body {
 background-color: zwhite;
 @include roboto;
-width: 1280px;
 max-width: 100%;
 min-width:  480px; //min width for mobile
 font-size: 16px;
@@ -53,7 +52,6 @@ font-size: 16px;
 
 // Header and navbar styles
 header {
-
 //Universal styles
 display: flex;
 color: white;
