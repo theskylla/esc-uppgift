@@ -24,7 +24,7 @@ header {
 }
 @media screen and (max-width: 870px) {
   header {
-    padding: 1.25rem;
+    padding: 1.5rem;
     height: 5rem;
   }
 }
@@ -55,6 +55,7 @@ header h1 {
 @media screen and (max-width: 870px) {
   #navbar {
     padding: 0;
+    height: 4rem;
   }
 }
 
@@ -184,7 +185,7 @@ header h1 {
   display: flex;
   background-color: white;
   align-items: center;
-  margin: 6.25rem 0;
+  margin: 6.25rem 0 0 0;
   overflow: hidden;
   justify-content: center;
 }
@@ -225,6 +226,11 @@ header h1 {
 .review__text {
   max-width: 26rem;
 }
+@media screen and (max-width: 870px) {
+  .review__text {
+    padding: 0 1rem;
+  }
+}
 
 .review q {
   font-size: 1.5rem;
@@ -255,7 +261,7 @@ header h1 {
   }
 }
 
-h2 {
+.challenges h2 {
   text-align: center;
   font-family: "roboto", sans-serif;
   font-weight: 400;
@@ -263,7 +269,7 @@ h2 {
   font-size: 2.25rem;
 }
 @media screen and (max-width: 870px) {
-  h2 {
+  .challenges h2 {
     margin: 5rem 0 1.25rem 0;
     font-size: 2rem;
   }
@@ -368,6 +374,12 @@ small {
   align-self: flex-end;
 }
 
+@media screen and (max-width: 870px) {
+  .challenges .btn-container {
+    padding: 3rem 0;
+  }
+}
+
 .quote {
   display: flex;
   flex-direction: column;
@@ -381,7 +393,7 @@ small {
 }
 @media screen and (max-width: 870px) {
   .quote {
-    padding: 6.25rem 0.625rem;
+    padding: 6.25rem 0.625rem 3.5rem 0.625rem;
   }
 }
 
