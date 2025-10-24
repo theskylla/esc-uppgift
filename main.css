@@ -37,8 +37,8 @@ header h1 {
 }
 @media screen and (max-width: 870px) {
   header h1 {
-    padding: 0 0 0 0.625rem;
     font-size: 1.5rem;
+    padding: 0 0 0 0.625rem;
     width: 3.125rem;
   }
 }
@@ -49,8 +49,8 @@ header h1 {
   background-color: #011827;
   list-style-type: none;
   justify-content: center;
-  height: 7.75rem;
   padding-top: 3rem;
+  height: 7.75rem;
 }
 @media screen and (max-width: 870px) {
   #navbar {
@@ -92,20 +92,17 @@ header h1 {
 .btn-container {
   display: flex;
   justify-content: center;
-  padding: 4.5rem 0 5rem 0;
-  gap: 1.25rem;
-  bottom: -5%;
   left: 50%;
+  gap: 1.25rem;
+  bottom: 0;
+  padding: 4.5rem 0 5rem 0;
 }
 @media screen and (max-width: 870px) {
   .btn-container {
-    flex-direction: column;
     align-items: center;
     background-color: white;
     flex-direction: column-reverse;
     padding: 2rem 0;
-    gap: 1.25rem;
-    bottom: 0;
   }
 }
 
@@ -113,6 +110,7 @@ header h1 {
   padding: 0;
   position: absolute;
   transform: translate(-50%);
+  bottom: -5%;
 }
 @media screen and (max-width: 870px) {
   .__halfCover {
@@ -185,16 +183,18 @@ header h1 {
   display: flex;
   background-color: white;
   align-items: center;
+  padding-bottom: 6rem;
   margin: 6.25rem 0 0 0;
   overflow: hidden;
   justify-content: center;
 }
 @media screen and (max-width: 870px) {
   .reviews {
-    scroll-snap-type: x mandatory;
     margin: 0 0 1.5rem 0;
     overflow-x: auto;
     justify-content: flex-start;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 0;
   }
 }
 
@@ -278,25 +278,22 @@ header h1 {
 
 .card-container {
   display: flex;
-  justify-content: center;
   gap: 1.25rem;
   overflow: hidden;
   flex-direction: row;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   overflow-x: auto;
+  justify-content: center;
   width: 100%;
   margin: 0 auto;
 }
 @media screen and (max-width: 870px) {
   .card-container {
     justify-content: flex-start;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-    overflow-x: auto;
-    padding: 0 2.5rem 0 0;
     width: 100%;
     margin-left: 2.5rem;
+    padding: 0 2.5rem 0 0;
   }
 }
 
@@ -343,9 +340,9 @@ small {
 .stars__text {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
   padding: 0.25rem 0 1.75rem 0;
+  justify-content: space-between;
 }
 @media screen and (max-width: 870px) {
   .stars__text {
@@ -457,11 +454,6 @@ small {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-@media screen and (max-width: 870px) {
-  .split-container img {
-    width: 100%;
-  }
 }
 
 .split__text {

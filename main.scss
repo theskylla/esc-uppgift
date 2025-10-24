@@ -1,3 +1,4 @@
+//add roboto
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); 
 
 //mixin for font
@@ -16,13 +17,13 @@
     font-weight: 700;
 }
 
-//breakpoint diy shorthand and variables
+//breakpoint diy shorthand
 @mixin breakpoint($max-width) {
   @media screen and (max-width: $max-width) {
     @content;
   }
 }
-
+//breakpoints for different screens
 $desktop-breakpoint: 1280px; //same as in figma
 $mobile-breakpoint: 870px; 
 
@@ -34,215 +35,215 @@ $dark-blue: #011827;
 $blue: #36769D;
 $light-blue:  #8ACFE5; 
 
-//still want to fix: cards 1000-860px, 
-
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0; //removes built in margin
+  padding: 0; //removes built in padding
   box-sizing: border-box;
 }
 
 body {
-background-color: zwhite;
-@include roboto;
-max-width: 100%;
-min-width:  480px; //min width for mobile
-font-size: 16px;
+ background-color: zwhite;
+ @include roboto;
+ max-width: 100%; //whole width of screen
+ min-width: 480px; //min width for mobile
+ font-size: 16px; //base for rem
 }
 
 // Header and navbar styles
 header {
-
 //Universal styles
-display: flex;
-color: white;
-width: 100%;
-background-color: $dark-blue; 
+ display: flex;
+ color: white;
+ width: 100%;
+ background-color: $dark-blue; 
 
-    //desktop first
-    padding: 1.5rem;
-    height: 6.25rem;
+     //desktop first
+     padding: 1.5rem;
+     height: 6.25rem;
 
     //mobile second
-    @include breakpoint($mobile-breakpoint) {
-    padding: 1.5rem;
-    height: 5rem;
+     @include breakpoint($mobile-breakpoint) {
+     padding: 1.5rem;
+     height: 5rem;
 }
 }
 
 header h1 {   
+//mobile and desktop    
 @include roboto-bold;
-    font-size: 2.5rem;
-    padding: 2.5rem 0 0 1.25rem;
+    //desktop same properties - different values
+     font-size: 2.5rem;
+     padding: 2.5rem 0 0 1.25rem;
 
-    
     @include breakpoint($mobile-breakpoint) {
-    padding: 0 0 0 0.625rem;
-    
-    font-size: 1.5rem;
-    width: 3.125rem;    
+     //mobile same properties - different values
+     font-size: 1.5rem;
+     padding: 0 0 0 0.625rem;
+         //mobile only
+         width: 3.125rem;    
 }
 }
 
 #navbar {
-display: flex;
-font-weight: 500;
-background-color: $dark-blue;
-list-style-type: none;
-justify-content: center;
-height: 7.75rem;
+ display: flex;
+ font-weight: 500;
+ background-color: $dark-blue;
+ list-style-type: none;  //remove dots from list
+ justify-content: center;
 
-    padding-top: 3rem;
-
+     padding-top: 3rem;
+     height: 7.75rem;
+ 
 @include breakpoint($mobile-breakpoint) {
-     padding: 0; 
-     height: 4rem;
+         padding: 0; 
+         height: 4rem;
 }
 }
 
 #navbar a {
-display: block;
-color:white;
-font-size: 1.5rem;
-padding: 1.5rem 6vw;
-text-decoration: none;
+ display: block;
+ color:white;
+ font-size: 1.5rem;
+ padding: 1.5rem 6vw;  //L and R padding relative to screen width
+ text-decoration: none;
 
  @include breakpoint($mobile-breakpoint) {
-    visibility: hidden;
+         visibility: hidden;  //removes navbar text in mobile view
 } 
 }
 
 #navbar a:hover {
-    color: $light-blue;
+ color: $light-blue;
 }
 
+//First page styles
 .home {
  position: relative;
  text-align: center;
 }
 
-//First page styles
 .home-image {
- height: 468px;
+ height: 468px; //height in figma design
  width: 100%;
- object-fit: cover;
+ object-fit: cover; //cover set area without re-scaling image
  margin: 0 auto;
  
 }
 
+//button containers
 .btn-container {
  display: flex;
  justify-content: center;
- padding: 4.5rem 0 5rem 0;
-
- gap: 1.25rem;
- bottom: -5%;
  left: 50%;
-
- @include breakpoint($mobile-breakpoint){
- flex-direction: column;
- align-items: center;
- background-color: white;
- flex-direction: column-reverse;
- padding: 2rem 0;
-
  gap: 1.25rem;
  bottom: 0;
+
+     padding: 4.5rem 0 5rem 0; 
+     
+ 
+ @include breakpoint($mobile-breakpoint){
+     align-items: center;
+     background-color: white;
+     flex-direction: column-reverse;
+
+         padding: 2rem 0;
+         
  
  }
 }
 
-
 .__halfCover {
-padding: 0;
-position: absolute;
-transform: translate(-50%);
+     padding: 0;
+     position: absolute;
+     transform: translate(-50%);  //cover image with half of buttons
+     
+     bottom: -5%;   
 
  @include breakpoint($mobile-breakpoint){
- padding: 2.5rem 0;
- position: static;
- transform: none;
+     padding: 2.5rem 0;
+     position: static;
+     transform: none;
 
- align-items: center;
+         align-items: center;
 
  }
 }
 
 /* All them button styles */
-.btn {
-width: 19.25rem;
-height: 4.125rem;
-border-radius: 0.25rem;
-border-style: none;
-font-size: 1.5rem;
-
-@include roboto-bold;
+.btn { //base for button styles
+ width: 19.25rem;
+ height: 4.125rem;
+ border-radius: 0.25rem;
+ border-style: none;
+ font-size: 1.5rem;
+ @include roboto-bold;
 }
 
-.btn--red {
+.btn--red { //big red button
  color: white;
  background-color: $red;
 
  @include breakpoint($mobile-breakpoint) {
-    color: #36769D;
-    background-color: transparent;
-    height: 2.5rem;
-
-    text-decoration: underline;
-    font-size: 1rem;    
+     color: #36769D;    //makes button look like link
+     background-color: transparent;
+    
+         height: 2.5rem;
+         text-decoration: underline;  
+         font-size: 1rem;    
  }
 }
 
-.split .btn {
-color: white;
-background-color: $red;
-text-decoration: none;
+.split .btn { //button inside split block
+ color: white;
+ background-color: $red;
+ text-decoration: none;
 
  @include breakpoint($mobile-breakpoint) {
-    height: 4.25rem; 
-    width: 19.25rem;
-    font-size: 1.5rem;
-    margin: 1.25rem 0;
+         height: 4.25rem; 
+         width: 19.25rem;
+         font-size: 1.5rem;
+         margin: 1.25rem 0;
  }
 }
 
-
-.btn--blue {
+.btn--blue { //light blue buttom
  color: black;
  background-color: $light-blue;
 
 }
 
-.btn--blueLined {
+.btn--blueLined { //button with light blue border
  background-color: $dark-blue;
  color: $light-blue;
  border: 0.125rem solid $light-blue;
 }
 
-.btn--smallRed {
-    color: white;
-    background-color: $red;
-    width: 11.2rem;
-    height: 2.75rem;
-    font-size: 1rem;
+.btn--smallRed { //small red button
+ color: white;
+ background-color: $red;
+ width: 11.2rem;
+ height: 2.75rem;
+ font-size: 1rem;
 }
 
 .reviews {
  display: flex;
  background-color: white;
  align-items: center;
- margin: 6.25rem 0 0 0;
- overflow: hidden;
- justify-content: center;
+ padding-bottom: 6rem;
+
+     margin: 6.25rem 0 0 0;
+     overflow: hidden;
+     justify-content: center;
 
    @include breakpoint($mobile-breakpoint) {
-   scroll-snap-type: x mandatory;
    margin: 0 0 1.5rem 0;
-   overflow-x: auto;
-   justify-content: flex-start;
+   overflow-x: auto;              //adds horizontal scroll in mobile view to scroll between reviews
+   justify-content: flex-start;   
 
+         scroll-snap-type: x mandatory;
+         padding-bottom: 0;
  }
-
 }
 
 .review { 
@@ -251,48 +252,47 @@ text-decoration: none;
     padding: 1.25rem;
 
     @include breakpoint($mobile-breakpoint) {
-    flex: 0 0 100%;
-    justify-content: center;
+         flex: 0 0 100%;
+         justify-content: center;  //centers content when one block, instead of two
  }
-   
 }
 
 .review img {
- border-radius: 50%;
- margin-right: 1.25rem;
- height: 6rem;
- width: 6rem;
+ border-radius: 50%; //make image circle
+
+     margin-right: 1.25rem;
+     height: 6rem;
+     width: 6rem;
 
  @include breakpoint($mobile-breakpoint) {
-    margin-right: 0.5rem;
-    height: 4.5rem;
-    width: 4.5rem;
+     margin-right: 0.5rem;
+     height: 4.5rem;
+     width: 4.5rem;
     
  }
 }
 
 .review__text {
-    max-width: 26rem;
+         max-width: 26rem;   //keeps text and image about the same hight
     @include breakpoint($mobile-breakpoint) {
-    padding: 0 1rem,
+             padding: 0 1rem,
  }
-
 }
 
 .review q {
-    font-size: 1.5rem;
-    font-style: italic;
-    quotes: none
-
+ font-size: 1.5rem;
+ font-style: italic; 
+ quotes: none;
 }
 
 .review p {
-    padding-top: 0.625rem;
-    font-size: 1.125rem;
-    width: 18rem;
+ padding-top: 0.625rem;
+ font-size: 1.125rem;
+
+     width: 18rem; //keeps text and image about the same hight
 
     @include breakpoint($mobile-breakpoint) {
-    width: auto;
+     width: auto;
  }
 }
 
@@ -300,10 +300,11 @@ text-decoration: none;
  display: flex;
  flex-direction: column;
  align-items: center;
- margin: 0 3rem;
+
+     margin: 0 3rem;
 
  @include breakpoint($mobile-breakpoint) {
-        margin: 0;
+     margin: 0;
  }
  }
 
@@ -311,111 +312,109 @@ text-decoration: none;
 text-align: center;
 @include roboto;
 
-    margin: 0 1.25rem 5rem 1.25rem;
-    font-size: 2.25rem;
+     margin: 0 1.25rem 5rem 1.25rem;
+     font-size: 2.25rem;
     
     @include breakpoint($mobile-breakpoint) {
-        margin: 5rem 0 1.25rem 0;
-        font-size: 2rem;
+     margin: 5rem 0 1.25rem 0;
+     font-size: 2rem;
  }
  }
 
 .card-container {
 display: flex;
-justify-content: center;
 gap: 1.25rem; 
 overflow: hidden;
 flex-direction: row;
   
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-    overflow-x: auto;
-width: 100%;
-margin: 0 auto;
+scroll-behavior: smooth;     //adds horizontal scroll when window is to small to display all cards at once
+scroll-snap-type: x mandatory;
+overflow-x: auto;
+
+     justify-content: center;
+     width: 100%;
+     margin: 0 auto;
 
 
  @include breakpoint($mobile-breakpoint) {
-    justify-content: flex-start;
-    
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-    overflow-x: auto;
-    padding: 0 2.5rem 0 0;
+    justify-content: flex-start;   //changes starting point of scroll to first card, instead of center card
     width: 100%;
     margin-left: 2.5rem;
+
+         padding: 0 2.5rem 0 0;
  }
  }
 
  .card {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    margin: 0.625rem;
-    border-radius: 5px;
-    box-shadow: 0px 0px 0.25rem 0.25rem rgba(0,0,0,0.1);
+     display: flex;
+     flex-direction: column;
+     background-color: white;
+     margin: 0.625rem;
+     border-radius: 5px;  //rounded edges
+     box-shadow: 0px 0px 0.25rem 0.25rem rgba(0,0,0,0.1); //shadow around entire cards
 
-    max-height: 30rem;
-    max-width: 24rem;
+     max-height: 30rem; //max height and width
+     max-width: 24rem;
 
-    min-height: 16rem;
-    min-width: 16rem;
-
+     min-height: 16rem; //min height and width to contain elements
+     min-width: 16rem;
 
     @include breakpoint($mobile-breakpoint) {
-    flex: 0 0 calc(85%);
+         flex: 0 0 calc(85%);   //One card + a bit of the next card is displayed
  }
  }
 
  .card img {
-    border-radius: 5px 0;
-    width: 100%;
-    height: 50%;
+ border-radius: 5px 0; //rounded edges at top
+ width: 100%;
+ height: 50%;
  }
 
  small {
-    padding-left: 1.25rem;
-    font-size: 0.875rem;
+ padding-left: 1.25rem;
+ font-size: 0.875rem;
 }
 
 .card h3 {
-    font-size: 1.75rem;
-    @include roboto;
+     font-size: 1.75rem;
+     @include roboto;
  } 
 
  .stars img {
-    height: 0.875rem;
-    width: 0.875rem;
+     height: 0.875rem; 
+     width: 0.875rem;
  }
 
  .stars__text {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0.25rem 0 1.75rem 0;
+ display: flex;
+ align-items: center;
+ width: 100%;
+ padding: 0.25rem 0 1.75rem 0;
 
-    @include breakpoint($mobile-breakpoint) {
-    justify-content: left;
+     justify-content: space-between; //stars align to left and text to the right
+
+  @include breakpoint($mobile-breakpoint) {
+     justify-content: left;  //text follows stars with a small gap
     
  }
  }
 
  .stars {
-    display: flex;
-    gap: 0.25rem;
+ display: flex;
+ gap: 0.25rem;
  }
 
  .card__text {
-    padding: 1.25rem;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
+ padding: 1.25rem;
+ display: flex;
+ align-items: flex-start;
+ flex-direction: column;
  }
 
 
  .card p {
-    font-size: 1.125rem;
-    font-weight: 400;
+ font-size: 1.125rem;
+ font-weight: 400;
  }
 
  .card .btn {
@@ -424,160 +423,144 @@ margin: 0 auto;
  }
 
  .challenges .btn-container {
-     @include breakpoint($mobile-breakpoint) {
-    padding: 3rem 0;    
+    @include breakpoint($mobile-breakpoint) {
+     padding: 3rem 0;    
  }
 }
 
 .quote {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: $dark-blue;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    quotes: none;
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ background-color: $dark-blue;
 
-    padding: 8rem 12.5rem;
+ text-align: center;  //center everything in block
+ align-items: center;
+ justify-content: center;
+ quotes: none;
+
+     padding: 8rem 12.5rem;
  
-
-     @include breakpoint($mobile-breakpoint) {
+   @include breakpoint($mobile-breakpoint) {
      padding: 6.25rem 0.625rem 3.5rem 0.625rem;
-    
- }
-    
+ }    
 }
+
 .quote q {
-    color: white;
-    font-size: 1.75rem; 
-    width: 38rem;  
+ color: white;
+ font-size: 1.75rem; 
+ width: 38rem;  
 
      @include breakpoint($mobile-breakpoint) {
      width: auto;
-    
  }
 }
 
 .quote .btn {
-    margin: 2.5rem;
+ margin: 2.5rem;
 }
-
 
 .split.container {
-display: flex;
-flex-direction: column;
-align-items: center;  
-
+ display: flex;
+ flex-direction: column;
+ align-items: center;  
 }
 
-
 .split {
-display: flex;
-width: 100%;
+ display: flex;
+ width: 100%;
     
-    flex-direction: row;
+     flex-direction: row;
 
 @include breakpoint($mobile-breakpoint) {
-    flex-direction: column;
-    height: auto;
+     flex-direction: column;
+
+         height: auto;
  }
 }
 
 .split:last-of-type {
-flex-direction: row-reverse;
-margin-bottom: 8rem;
+     flex-direction: row-reverse; //displays image -  text, text - image (in two rows)
+     margin-bottom: 8rem;
 
 @include breakpoint($mobile-breakpoint) {
-    flex-direction: column;
-    margin-bottom: 2.5rem;
+     flex-direction: column; //displays image - text, image - text (in one column)
+     margin-bottom: 2.5rem;
  }
 }
 
 .split-image {
-    display: flex;
-    width: 50%;
-   
+     display: flex;
+     width: 50%;  //image 50% of screen width
    
     @include breakpoint($mobile-breakpoint) {
-    width: 100%;
-    height: auto;
+     width: 100%; //image 100% of screen width
+     height: auto;
     
  }
 }
 
 .split-container img {
-    width: 100%;
-     object-fit: cover;
-    @include breakpoint($mobile-breakpoint) {
-    width: 100%;  
- }
+ width: 100%;  //covers set area without changing scale
+ object-fit: cover;
 }
 
 .split__text {
-display: flex; 
-flex-direction: column;
-background-color: white;
-justify-content: center;
+ display: flex; 
+ flex-direction: column;
+ background-color: white;
+ justify-content: center;
     
-    width: 50%;
-    
-    padding: clamp(3rem, 7.5vw, 9rem);
-   
+     width: 50%;   //takes up the other 50% of the screens widht
+     padding: clamp(3rem, 7.5vw, 9rem);   //relative padding to keep text size when scaling window
 
     @include breakpoint($mobile-breakpoint) {
-    width: 100%;
-    padding: 2.5rem 1.25rem;
+     width: 100%;
+     padding: 2.5rem 1.25rem;
    
  }
 }
 
 .split__text h3 {
-    font-size: 2rem;
-     
-    @include roboto-bolder;
+ font-size: 2rem;    
+ @include roboto-bolder;
 }
 
 .split__text p {
-    padding: 1.5rem 0 1.5rem 0;
-    font-size: 1.5rem;
+ padding: 1.5rem 0 1.5rem 0;
+ font-size: 1.5rem;
 }
 
 footer {
-    display: flex;
-    width: 100%;
-    color:white;
-    background-color: $dark-blue;
-    font-size: 1.125rem;
+ display: flex;
+ width: 100%;
+ color:white;
+ background-color: $dark-blue;
+ font-size: 1.125rem;
 
-    padding: 10rem 6.5rem;
-    gap: 12vw;
-    height: auto;
+ padding: 10rem 6.5rem;
+ gap: 12vw;
+ height: auto;
 
     @include breakpoint($mobile-breakpoint) {
-    padding: 4rem 1.25rem;
-    gap: 2.5rem;
-    height: auto;
+     padding: 4rem 1.25rem;
+     gap: 2.5rem;
+     height: auto;
 
-    flex-direction: column;  
-    
+         flex-direction: column;    
  }
-    
 }
 
 .footer__text:nth-child(1) {
-width: 45%;
+     width: 45%;  //fist text in footer takes up almost half of with in desktop
 
-
-@include breakpoint($mobile-breakpoint) {
-    width: 100%;
+    @include breakpoint($mobile-breakpoint) {
+     width: 100%;  //first text in footer takes up whole width in footer
  }
-
 }
 
 footer h3 {
- padding-bottom: 0.5rem;
-
+ padding-bottom: 0.5rem; //spacing between header and text
  @include roboto-bolder;
 }
 
