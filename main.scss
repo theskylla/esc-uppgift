@@ -45,6 +45,7 @@ $light-blue:  #8ACFE5;
 body {
 background-color: zwhite;
 @include roboto;
+width: 1280px;
 max-width: 100%;
 min-width:  480px; //min width for mobile
 font-size: 16px;
@@ -298,7 +299,7 @@ text-decoration: none;
  display: flex;
  flex-direction: column;
  align-items: center;
- margin: 0 6.25rem;
+ margin: 0 3rem;
 
  @include breakpoint($mobile-breakpoint) {
         margin: 0;
@@ -351,12 +352,11 @@ margin: 0 auto;
     margin: 0.625rem;
     border-radius: 5px;
     box-shadow: 0px 0px 0.25rem 0.25rem rgba(0,0,0,0.1);
-    
 
     max-height: 30rem;
     max-width: 24rem;
 
-    min-height: 18.45rem;
+    min-height: 16rem;
     min-width: 16rem;
 
 
@@ -397,7 +397,6 @@ margin: 0 auto;
     justify-content: left;
     
  }
-
  }
 
  .stars {
