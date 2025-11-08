@@ -12,14 +12,16 @@ function showNav() {
         const navbarItems = document.querySelectorAll("#navbar li");
 
         const close = document.createElement("span"); 
+        close.className = "fa fa-times";
         close.classList.add("close");
-        close.innerHTML = "&times;"; 
+    
+       
         close.onclick = () => overlay.remove(); 
         overlay.appendChild(close);
 
         navbarItems.forEach(li => {
-            const clonedLi = li.cloneNode(true); 
-            newList.appendChild(clonedLi);
+            const liDupe = li.cloneNode(true); 
+            newList.appendChild(liDupe);
         });
 
         overlay.appendChild(newList);

@@ -99,15 +99,20 @@ header a.icon {
 
 .overlay {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.9);
+    top: 1rem;
+    bottom: 1rem;
+    right: 1rem;
+    left: 1rem;
+
+    width: 95%;
+    height: 95%;
+    background-color: $dark-blue;
+    box-shadow: 0 0 0 2rem rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999;
+    z-index: 99;
+
 }
 
 .overlay ul {
@@ -124,12 +129,15 @@ header a.icon {
     color: white;
     font-size: 2rem;
     text-decoration: none;
+    line-height: 4rem;
+    @include roboto-bold;
+    animation: ease-in-out 0.3s;
 }
 
-.close {
+.overlay .close {
     position: absolute;
-    top: 20px;
-    right: 30px;
+    top: 1rem;
+    right: 1rem;
     font-size: 3rem;
     color: white;
     cursor: pointer;
