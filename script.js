@@ -3,6 +3,11 @@ function showNav() {
     let overlay = document.getElementById("overlay-menu");
 
     if (!overlay) {
+        shading = document.createElement("div");
+        shading.className = "shading";
+
+        
+
         overlay = document.createElement("div");
         overlay.id = "overlay-menu";
         overlay.classList.add("overlay");
@@ -15,14 +20,17 @@ function showNav() {
         close.className = "fa-solid fa-x";
         close.classList.add("close");
        
-        close.onclick = () => overlay.remove(); 
+        close.onclick = () => {
+        overlay.remove(), shading.remove(); 
+    };
         overlay.appendChild(close);
-
+      
         navbarItems.forEach(li => {
             const liDupe = li.cloneNode(true); 
             newList.appendChild(liDupe);
         });
 
+        document.body.appendChild(shading);
         overlay.appendChild(newList);
 
         document.body.appendChild(overlay);
@@ -30,5 +38,7 @@ function showNav() {
     } else {
         // If it exists, remove it (toggle behavior)
         overlay.remove();
+        shading.remove();
+    
     }
 }
