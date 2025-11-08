@@ -12,9 +12,8 @@ function showNav() {
         const navbarItems = document.querySelectorAll("#navbar li");
 
         const close = document.createElement("span"); 
-        close.className = "fa fa-times";
+        close.className = "fa-solid fa-x";
         close.classList.add("close");
-    
        
         close.onclick = () => overlay.remove(); 
         overlay.appendChild(close);
